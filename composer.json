@@ -1,22 +1,26 @@
 {
-	"name": "congredi/rbac",
-	"description": "Congredi RBAC Package",
-	"authors": [
-		{
-			"name": "Andrei Kun",
-			"email": "andrei.kun@tss-yonder.com"
-		}
-	],
-	"require": {
-		"php": "> 5.5.9",
-		"illuminate/database": "5.3.*",
-		"illuminate/contracts": "5.3.*",
-		"illuminate/config": "5.3.*",
-		"illuminate/support": "5.3.*"
+  "name": "congredi/rbac",
+  "description": "Congredi RBAC Package",
+  "authors": [
+	{
+	  "name": "Andrei Kun",
+	  "email": "andrei.kun@tss-yonder.com"
 	},
-	"autoload": {
-		"psr-4": {
-			"Congredi\\Rbac\\": "src"
-		}
+	{
+	  "name": "John van Terheijden",
+	  "email": "john@fastguide.eu"
 	}
+  ],
+  "require": {
+	"php": "> 5.5.9",
+	"illuminate/database": "5.3.*",
+	"illuminate/contracts": "5.3.*",
+	"illuminate/config": "5.3.*",
+	"illuminate/support": "5.3.*"
+  },
+  "autoload": {
+	"psr-4": {
+	  "Congredi\\Rbac\\": "src"
+	}
+  }
 }
