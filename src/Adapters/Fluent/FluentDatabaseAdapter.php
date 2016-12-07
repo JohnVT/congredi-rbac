@@ -183,7 +183,7 @@ class FluentDatabaseAdapter extends AbstractDatabaseAdapter
 	{
 		return $this->getConnection()->table($this->itemChildTable)
 			->where('child', $itemName)
-			->lists('parent');
+			->pluck('parent');
 	}
 
 	/**
@@ -490,7 +490,7 @@ class FluentDatabaseAdapter extends AbstractDatabaseAdapter
 		if (!$this->supportsCascadeUpdate()) {
 			$this->getConnection()->table($this->itemTable)
 				->where('type', $type)
-				->lists('name');
+				->pluck('name');
 
 			if (empty($names)) {
 				return true;
